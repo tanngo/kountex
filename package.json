@@ -1,6 +1,6 @@
 {
   "name": "kountexample",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Kount example",
   "main": "www/KountExample.js",
   "scripts": {
@@ -9,7 +9,8 @@
   "cordova": {
     "id": "phonegap-plugin-push",
     "platforms": [
-      "android"
+      "android",
+	  "ios"
     ]
   },
   "keywords": [
