@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-kount-ex" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>KountExample</name>
+    <js-module name="KountExample" src="www/KountExample.js">
+        <clobbers target="cordova.plugins.KountExample" />
+    </js-module>
+    <dependency id="cordova-plugin-device"></dependency>
+    <dependency id="cordova-plugin-console"></dependency>
+</plugin>

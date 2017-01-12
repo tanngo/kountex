@@ -1,0 +1,26 @@
+{
+  "name": "KountExample",
+  "version": "0.0.1",
+  "description": "Kount example",
+  "main": "www/KountExample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cordova": {
+    "id": "cordova-plugin-kount-ex",
+    "platforms": [
+      "android"
+      
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanngo/kountex.git"
+  },
+  "author": "'tanngo_1303@yahoo.com' <'tanngo_1303@yahoo.com'> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tanngo/kountex/issues"
+  },
+  "homepage": "https://github.com/tanngo/kountex#readme"
+}
