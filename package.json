@@ -1,17 +1,43 @@
 {
   "name": "kountexample",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Kount example",
   "main": "www/KountExample.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "cordova": {
-    "id": "cordova-plugin-kount-ex",
+    "id": "phonegap-plugin-push",
     "platforms": [
       "android"
-      
     ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:phonegap",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-wp8",
+    "cordova-browser"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "1.8.2": {
+        "cordova": ">=3.6.3",
+        "cordova-android": ">=4.0.0",
+        "cordova-ios": ">=4.1.0"
+      },
+      "1.9.0": {
+        "cordova-ios": ">=4.3.0",
+        "cordova-android": ">=6.0.0",
+        "cordova": ">=6.4.0"
+      },
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
   },
   "repository": {
     "type": "git",
