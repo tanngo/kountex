@@ -1,11 +1,12 @@
 var exec = require('cordova/exec');
 
-exports.coolMethod = function(arg0, success, error) {
+var KountExample = function (){}
+KountExample.prototype.coolMethod = function(arg0, success, error) {
 	error("cool metthod");
     exec(success, error, "KountExample", "coolMethod", [arg0]);
 };
 
-exports.getNextAppointment = function(success, error, args) {
+KountExample.prototype.getNextAppointment = function(success, error, args) {
     if (args.length == 0 || args[0] < 0) {
         // Invalid call to the plugin, so return an error condition
         error('Invalid value for minutes argument');
@@ -27,3 +28,13 @@ exports.getNextAppointment = function(success, error, args) {
         success('');
     }
 }
+
+if(!window.plugins)
+    window.plugins = {};
+
+if (!window.plugins.KountExample)
+    window.plugins.KountExample = new KountExample();
+
+if (typeof module != 'undefined' && module.exports)
+    module.exports = KountExample;
+
