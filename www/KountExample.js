@@ -2,10 +2,11 @@ var exec = require('cordova/exec');
 
 var KountExample = function (){}
 KountExample.prototype.coolMethod = function(arg0, success, error) {
-	error("cool metthod");
     exec(success, error, "KountExample", "coolMethod", [arg0]);
 };
-
+KountExample.prototype.getTextN = function(arg0, success, error) {
+    exec(success, error, "AlertEx", "ReturnText", [arg0]);
+};
 KountExample.prototype.getNextAppointment = function(success, error, args) {
     if (args.length == 0 || args[0] < 0) {
         // Invalid call to the plugin, so return an error condition
