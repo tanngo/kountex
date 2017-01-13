@@ -18,12 +18,18 @@ public class KountExample extends CordovaPlugin {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
             return true;
+        } else  if (action.equals("ReturnText")) {
+            String message =  this.ReturnText();
+            if (message == "Ngo") {
+                  return true;
+            }
+            return false;
         }
         return false;
     }
 	public String ReturnText()
 	  {
-		return "Ngo returned text";
+		return "Ngo";
 	  }
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
