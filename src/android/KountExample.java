@@ -20,7 +20,6 @@ public class KountExample extends CordovaPlugin {
             return true;
         } else  if (action.equals("ReturnText")) {
             String message =  this.ReturnText();
-            throw JSONException(message);
             if (message == "Ngo") {
                   return true;
             }
@@ -29,10 +28,9 @@ public class KountExample extends CordovaPlugin {
         return false;
     }
 	public String ReturnText()
-	  {
-         throw JSONException("Inside ReturnText");
+	{
 		return "Ngo";
-	  }
+	}
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
