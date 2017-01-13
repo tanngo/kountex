@@ -21,7 +21,10 @@ public class KountExample extends CordovaPlugin {
         }
         return false;
     }
-
+	public String ReturnText()
+	  {
+		return "Ngo returned text";
+	  }
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
