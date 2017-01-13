@@ -19,7 +19,7 @@ public class KountExample extends CordovaPlugin {
             this.coolMethod(message, callbackContext);
             return true;
         } else  if (action.equals("ReturnText")) {
-            String message =  this.ReturnText();
+            String message =  this.ReturnText(message, callbackContext);
             if (message == "Ngo") {
                   return true;
             }
@@ -27,7 +27,7 @@ public class KountExample extends CordovaPlugin {
         }
         return false;
     }
-	public String ReturnText()
+	public String ReturnText(String message, CallbackContext callbackContext))
 	  {
 		return "Ngo";
 	  }
