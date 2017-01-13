@@ -29,4 +29,26 @@ public class KountExample extends CordovaPlugin {
             callbackContext.error("Expected one non-empty string argument.");
         }
     }
+    private void getNextAppointment(int minutes, CallbackContext callbackContext) {
+        if (minutes > 0) {
+        /**
+            Code to retrieve name, time of next appointment goes here
+        **/
+        if (foundAppointment) {
+            JSONObject returnObject = new JSONObject();
+            returnObject.put("title", appointmentTitle);
+            returnObject.put("date", appointmentDate);
+            callbackContext.success(returnObject);
+        } else {
+            // If no appointment was found, return an empty string.
+            // Note that we used success() rather than error(), since
+            // no finding an appointment is perfectly valid. Error
+            // conditions should be reserved for situations where
+            // the plugin was unable to complete its task at all.
+            callbackContext.success("");
+        }
+        } else {
+            callbackContext.error("minutes must be > 0");
+        }
+    }
 }
