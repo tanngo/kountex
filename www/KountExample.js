@@ -6,7 +6,7 @@ var KountExample = function (){
 KountExample.prototype.coolMethod = function(arg0, success, error) {
     exec(success, error, "KountExample", "coolMethod", [arg0]);
 };
-KountExample.prototype.ReturnText = function() {
+KountExample.prototype.ReturnText = function(arg0, success, error) {
     alert("ReturnText in");
     exec(success, error, "KountExample", "ReturnText",[]);
 };

@@ -27,7 +27,7 @@ public class KountExample extends CordovaPlugin {
         }
         return false;
     }
-	public String ReturnText()
+	public String ReturnText(String message, CallbackContext callbackContext)
 	{
 		return "Ngo";
 	}
