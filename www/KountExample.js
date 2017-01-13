@@ -4,7 +4,7 @@ var KountExample = function (){}
 KountExample.prototype.coolMethod = function(arg0, success, error) {
     exec(success, error, "KountExample", "coolMethod", [arg0]);
 };
-KountExample.prototype.getTextN = function() {
+KountExample.prototype.ReturnText = function() {
     exec(success, error, "KountExample", "ReturnText",[]);
 };
 KountExample.prototype.getNextAppointment = function(success, error, args) {
