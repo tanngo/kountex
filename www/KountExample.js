@@ -1,6 +1,8 @@
 var exec = require('cordova/exec');
 
-var KountExample = function (){}
+var KountExample = function (){
+    var _appID = "AppIDNGO";
+}
 KountExample.prototype.coolMethod = function(arg0, success, error) {
     exec(success, error, "KountExample", "coolMethod", [arg0]);
 };
