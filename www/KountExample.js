@@ -1,6 +1,7 @@
 var exec = require('cordova/exec');
 
 exports.coolMethod = function(arg0, success, error) {
+	alert("cool metthod");
     exec(success, error, "KountExample", "coolMethod", [arg0]);
 };
 
