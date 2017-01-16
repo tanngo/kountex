@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-kount-ex" version="0.5.8" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-kount-ex" version="0.5.9" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>KountExample</name>
 	<description>Kount integration plugin</description>
 	<license>MIT</license>
 	<js-module name="KountExample" src="www/KountExample.js">
-		<clobbers target="cordova.plugins.KountExample" />
+		<clobbers target="KountExample" />
 	</js-module>
 	<dependency id="cordova-plugin-device" />
 	<dependency id="cordova-plugin-console" />
 	<platform name="android">
-		<config-file target="AndroidManifest.xml" parent="/*">
+		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="KountExample">
 				<param name="android-package" value="cordova-plugin-kount-ex.KountExample"/>
 			</feature>
