@@ -1,13 +1,12 @@
-var exec = require('cordova/exec');
 
 var KountExample = function (){
     var _appID = "AppIDNGO";
 }
 KountExample.prototype.coolMethod = function(arg0, success, error) {
-    exec(success, error, "KountExample", "coolMethod", [arg0]);
+     cordova.exec(success, error, "KountExample", "coolMethod", [arg0]);
 };
 KountExample.prototype.ReturnText = function(arg0, success, error) {
-    exec(success, error, "KountExample", "ReturnText",[]);
+     cordova.exec(function(){}, function(){}, "KountExample", "ReturnText",[]);
 };
 KountExample.prototype.getNextAppointment = function(success, error, args) {
     if (args.length == 0 || args[0] < 0) {

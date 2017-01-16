@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-kount-ex" version="0.4.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-kount-ex" version="0.4.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>KountExample</name>
 	<description>Kount integration plugin</description>
 	<license>MIT</license>
@@ -7,18 +7,18 @@
 		<clobbers target="cordova.plugins.KountExample" />
 	</js-module>
 	<engines>
-	    <engine name="cordova-android" version=">=5.0.0" /> <!-- This main branch of OneSignal depends on gradle and maven. -->
+	    <engine name="cordova-android" version=">=4.0.0" /> <!-- This main branch of OneSignal depends on gradle and maven. -->
   	</engines>
 	<dependency id="cordova-plugin-device" />
 	<dependency id="cordova-plugin-console" />
 	<platform name="android">
 		<config-file parent="/*" target="AndroidManifest.xml">		
 				<feature name="KountExample">
-				<param name="android-package" value="kountex" />
+				<param name="android-package" value="kountex.KountExample" />
 				</feature>	
 		</config-file>
-		<source-file src="src/android/kountex/KountExample.java" target-dir="src/kountex/KountExample" />
-		<source-file src="src/android/kountex/lib/kount-data-collector-3.1.jar" target-dir="src/kountex/KountExample" />
-		<source-file src="src/android/kountex/lib/ClassLibEx.jar" target-dir="src/kountex/lib/AlertEx" />
+		<source-file src="src/android/kountex/KountExample.java" target-dir="src/android/kountex/KountExample" />
+		<source-file src="src/android/kountex/lib/kount-data-collector-3.1.jar" target-dir="src/android/kountex/lib/KountCollector" />
+		<source-file src="src/android/kountex/lib/ClassLibEx.jar" target-dir="src/lib/kountex/AlertEx" />
 	</platform>
 </plugin>
