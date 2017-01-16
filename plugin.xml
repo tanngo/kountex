@@ -9,12 +9,12 @@
 	<platform name="android">
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="KountExample">
-				<param name="android-package" value="KountExample"/>
+				<param name="android-package" value="cordova-plugin-kount-ex"/>
 			</feature>
 		</config-file>
 		 <config-file target="AndroidManifest.xml" parent="/*">
         </config-file>
-		<source-file src="src/android/KountExample.java" target-dir= "src" />
+		<source-file src="src/android/KountExample.java" target-dir= "src/cordova-plugin-kount-ex" />
 	
 	</platform>
 	<platform name="ios">
