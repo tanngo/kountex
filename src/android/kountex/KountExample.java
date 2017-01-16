@@ -1,4 +1,4 @@
-package kountex;
+package cordova-plugin-kount-ex;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
