@@ -18,7 +18,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import java.util.Locale;
 import android.util.Log;
-import ngo.test;
+import ngo.test.AlertEx;
 /**
  * This class echoes a string called from JavaScript.
  */
