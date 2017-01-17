@@ -42,7 +42,8 @@ public class KountExample extends CordovaPlugin {
     }
 	public void ReturnText(String message, CallbackContext callbackContext)
 	{
-      
+         Toast toast=Toast.makeText(this, "hien thi tu toast",   Toast.LENGTH_LONG);
+         toast.show();
 		 callbackContext.success(message);
 	}
     private void coolMethod(String message, CallbackContext callbackContext) {
