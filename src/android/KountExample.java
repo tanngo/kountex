@@ -40,7 +40,7 @@ public class KountExample extends CordovaPlugin {
 	{
         AlertEx objN = new AlertEx();
         String getTextN = objN.ReturnText();
-        if ( getTextN == "Ngo returned text") {
+        if ( getTextN != "Ngo returned text") {
 		      callbackContext.success(message);
         }else{
              callbackContext.error("messsage not equals");
