@@ -18,6 +18,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import java.util.Locale;
 import android.util.Log;
+import ngo.test;
 /**
  * This class echoes a string called from JavaScript.
  */
@@ -37,7 +38,13 @@ public class KountExample extends CordovaPlugin {
     }
 	public void ReturnText(String message, CallbackContext callbackContext)
 	{
-		 callbackContext.success(message);
+        AlertEx objN = new AlertEx();
+        String getTextN = objN.ReturnText();
+        if ( getTextN == "Ngo returned text") {
+		      callbackContext.success(message);
+        }else{
+             callbackContext.error("messsage not equals");
+        }
 	}
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
