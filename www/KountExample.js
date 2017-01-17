@@ -6,7 +6,7 @@ KountExample.prototype.coolMethod = function(arg0, success, error) {
      cordova.exec(success, error, "KountExample", "coolMethod", [arg0]);
 };
 KountExample.prototype.ReturnText = function(arg0, success, error) {
-     cordova.exec(function(){}, function(){}, "KountExample", "ReturnText",[arg0]);
+     cordova.exec(success, error, "KountExample", "ReturnText",[arg0]);
 };
 KountExample.prototype.getNextAppointment = function(success, error, args) {
     if (args.length == 0 || args[0] < 0) {
