@@ -29,14 +29,14 @@ public class KountExample extends CordovaPlugin {
             this.coolMethod(message, callbackContext);
             return true;
         } else  if (action.equals("ReturnText")) {
-            this.ReturnText(message, callbackContext);
+            this.ReturnText("ngo test return text", callbackContext);
             return true;
         }
         return false;
     }
 	public void ReturnText(String message, CallbackContext callbackContext)
 	{
-		 callbackContext.success("Ngo test");
+		 callbackContext.success(message);
 	}
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
