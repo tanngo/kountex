@@ -17,12 +17,7 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import java.util.Locale;
-import android.widget.Toast;
-import android.os.Bundle;
-
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.util.Log;
 /**
  * This class echoes a string called from JavaScript.
  */
@@ -42,8 +37,7 @@ public class KountExample extends CordovaPlugin {
     }
 	public void ReturnText(String message, CallbackContext callbackContext)
 	{
-         Toast toast=Toast.makeText(this, "hien thi tu toast",   Toast.LENGTH_LONG);
-         toast.show();
+        Log.e("Log test return test","content of log from Ngo");
 		 callbackContext.success(message);
 	}
     private void coolMethod(String message, CallbackContext callbackContext) {
