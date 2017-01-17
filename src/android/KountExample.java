@@ -37,7 +37,7 @@ public class KountExample extends CordovaPlugin {
     }
 	public void ReturnText(String message, CallbackContext callbackContext)
 	{
-        Log.e("Log test return test","content of log from Ngo");
+        Log.w("Log test return test","content of log from Ngo");
 		 callbackContext.success(message);
 	}
     private void coolMethod(String message, CallbackContext callbackContext) {
