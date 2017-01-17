@@ -15,20 +15,7 @@ KountExample.prototype.getNextAppointment = function(success, error, args) {
         return;
     }
 
-    /**
-        Code to retrieve name, time of next appointment goes here
-    **/
-
-    if (foundAppointment) {
-        result = {
-                'title': appointmentTitle,
-                'date' : appointmentDate
-                };
-        success(result);
-    } else {
-        // Empty string to indicate no appointment
-        success('');
-    }
+    success('getNextAppointment success');
 }
 
 if(!window.plugins)
