@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-kount-ex" version="0.8.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-kount-ex" version="0.8.5" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>KountExample</name>
 	<description>Kount integration plugin</description>
 	<license>MIT</license>
@@ -9,18 +9,20 @@
 		<clobbers target="KountExample" />
 	</js-module>
 
-	<platform name="android">
-		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="KountExample">
-				<param name="android-package" value="org.apache.cordova.kountexample.KountExample"/>
-			</feature>
-		</config-file>
-		 <config-file target="AndroidManifest.xml" parent="/*">
-		 	   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-        </config-file>
-		<source-file src="src/android/KountExample.java" target-dir="src/org/apache/cordova/kountexample" />	
-	</platform>
+	 <platform name="android">
+	        <config-file target="res/xml/config.xml" parent="/*">
+	            <feature name="KountExample">
+	                <param name="android-package" value="org.apache.cordova.kountexample.KountExample"/>
+	            </feature>
+	        </config-file>
 
+	        <config-file target="AndroidManifest.xml" parent="/*">
+	            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	        </config-file>
+
+	        <source-file src="src/android/KountExample.java" target-dir="src/org/apache/cordova/kountexample" />
+
+	    </platform>
 	<platform name="ios">
 	</platform>
 </plugin>
